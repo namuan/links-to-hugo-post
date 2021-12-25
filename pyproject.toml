@@ -31,6 +31,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.7.1, <4.0"
+py-executable-checklist = "^0.9.0"
 
 [tool.poetry.dev-dependencies]
 autoflake = "*"
@@ -90,6 +91,9 @@ fail_under = 100
 exclude_lines = [
     'if TYPE_CHECKING:',
     'pragma: no cover'
+]
+omit = [
+    'src/links_to_hugo_post/console.py',
 ]
 
 [tool.mypy]

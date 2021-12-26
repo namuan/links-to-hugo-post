@@ -44,7 +44,7 @@ jobs:
       - uses: ./.github/actions/python-poetry-env
         with:
           python-version: ${{ matrix.python-version }}
-      - run: make ªtests
+      - run: make tests
 
   release:
     if: "startsWith(github.event.head_commit.message, 'bump:')"

@@ -19,7 +19,7 @@ pre-commit: ## Manually run all precommit hooks
 	poetry run pre-commit run --all-files
 
 tests: clean ## Run all tests
-	poetry run pytest -v
+	poetry run ward
 
 build: pre-commit tests ## Build package
 	poetry build

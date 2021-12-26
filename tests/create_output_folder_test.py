@@ -1,6 +1,9 @@
+from ward import test
+
 from links_to_hugo_post.workflow import CreateOutputFolder
 
 
+@test("Should create required folders")
 def test_create_output_folder_step() -> None:
     context: dict = {
         "post_title": "test_title",

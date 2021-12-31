@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "links-to-hugo-post"
-version = "0.3.1"
+version = "0.4.0"
 description = "Convert a list of links to a Hugo blog post"
 authors = [
     "namuan <github@deskriders.dev>",
@@ -61,7 +61,7 @@ ward = "^0.65.0-beta.0"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.3.1"
+version = "0.4.0"
 tag_format = "$version"
 version_files = [
     "pyproject.toml:version",

@@ -77,3 +77,6 @@ venv.bak/
 
 # IDEs
 .idea/
+
+# Others
+poetry.toml

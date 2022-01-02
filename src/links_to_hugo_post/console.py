@@ -17,15 +17,9 @@ def setup_logging() -> None:
 
 
 def parse_args() -> Namespace:
-    parser = ArgumentParser(
-        description=__doc__, formatter_class=RawDescriptionHelpFormatter
-    )
-    parser.add_argument(
-        "-l", "--links-file", required=True, type=str, help="Path to links file"
-    )
-    parser.add_argument(
-        "-t", "--post-title", required=True, type=str, help="Blog post title"
-    )
+    parser = ArgumentParser(description=__doc__, formatter_class=RawDescriptionHelpFormatter)
+    parser.add_argument("-l", "--links-file", required=True, type=str, help="Path to links file")
+    parser.add_argument("-t", "--post-title", required=True, type=str, help="Blog post title")
     parser.add_argument(
         "-b",
         "--blog-directory",
